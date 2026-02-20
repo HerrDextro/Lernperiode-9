@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "cloud.client": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
