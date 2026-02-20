@@ -3,7 +3,7 @@ Containerised private fileserver using  ASP.NET and MongoDB as the Backend, and 
 
 ## Zusammenfassung
 
-Das Ziel dieses Projekts ist die Entwicklung eines privaten Cloud-Speichersystems, das auf einem Raspberry Pi 4 betrieben werden kann. Die Architektur basiert auf einem modernen Technologie-Stack, bestehend aus einem ASP.NET Core Backend und einer MongoDB-Datenbank. Zur Verwaltung großer Binärdateien (BLOBs) wird MongoDB GridFS eingesetzt, welches Dateien in Segmente unterteilt und so ein effizientes Streaming ermöglicht. Die Benutzeroberfläche wird als Kommandozeilen-Interface (CLI) mit C# und der Bibliothek Spectre.Console realisiert. Das gesamte System wird mithilfe von Docker containerisiert, um eine einfache Portierbarkeit und konsistente Laufzeitumgebungen zwischen der Entwicklungsumgebung und der Zielhardware sicherzustellen. Der Fokus liegt dabei auf der Trennung von Metadaten und tatsächlichen Dateiinhalten innerhalb einer virtuellen Verzeichnisstruktur.
+Heute habe ich eine ASP.NET-API entwickelt, die Dateien in MongoDB über GridFS speichert und per GET abrufbar macht. Der Schwerpunkt liegt auf der Trennung von Metadaten und den eigentlichen Dateiinhalten innerhalb einer virtuellen Verzeichnisstruktur. Die Benutzeroberfläche erfolgt über ein Kommandozeilen-Interface (CLI), implementiert in C# unter Verwendung der Bibliothek Spectre.Console. Das gesamte System ist containerisiert mit Docker, um eine einfache Portierbarkeit und konsistente Laufzeitumgebungen zwischen Entwicklungs- und Zielsystemen zu gewährleisten.
 
 ## Aktueller Projektstatus: Infrastruktur-Setup (20.02.2026)
 
