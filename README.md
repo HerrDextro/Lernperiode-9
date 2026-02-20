@@ -24,7 +24,7 @@ Heute wurde das Grundgerüst der Anwendung erstellt und die Kommunikation zwisch
 
 ## Arbeitspakete (Abgabetermin: 27.02.2026)
 
-### - [ ] Virtuelle Verzeichnislogik
+- [ ] Virtuelle Verzeichnislogik
 
 -   **Beschreibung:** Implementierung einer Ordnerstruktur innerhalb der Datenbank.
     
@@ -33,7 +33,7 @@ Heute wurde das Grundgerüst der Anwendung erstellt und die Kommunikation zwisch
 -   **Ziel:** Der Benutzer kann im CLI durch Ordner navigieren.
     
 
-### - [ ] Streaming-Upload-System
+ - [ ] Streaming-Upload-System
 
 -   **Beschreibung:** Entwicklung einer Funktion zum Hochladen lokaler Dateien in den Cloud-Speicher.
     
@@ -42,7 +42,7 @@ Heute wurde das Grundgerüst der Anwendung erstellt und die Kommunikation zwisch
 -   **Ziel:** Dateien können vom lokalen Rechner auf den Server übertragen werden.
     
 
-### - [ ] Datenpersistenz und Volume-Mounting
+- [ ] Datenpersistenz und Volume-Mounting
 
 -   **Beschreibung:** Sicherstellung der dauerhaften Speicherung auf der Festplatte.
     
@@ -51,7 +51,7 @@ Heute wurde das Grundgerüst der Anwendung erstellt und die Kommunikation zwisch
 -   **Ziel:** Daten bleiben auch nach einem Neustart oder Löschen der Container erhalten.
     
 
-### - [ ] Dateiverwaltung und Metadaten
+- [ ] Dateiverwaltung und Metadaten
 
 -   **Beschreibung:** Implementierung grundlegender Dateioperationen (CRUD).
     
