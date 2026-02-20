@@ -18,7 +18,7 @@ Heute wurde das Grundgerüst der Anwendung erstellt und die Kommunikation zwisch
 -   **CLI-Frontend:** Grundgerüst der Spectre.Console-Anwendung zur interaktiven Darstellung der Dateilisten.
 
 ## Client UI
-![Client UI V1 (minimum viable product ahh)](images/clientV1)
+![Client Interface](images/clientV1.png)
 
 ----------
 
