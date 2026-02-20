@@ -30,7 +30,7 @@ Heute wurde das Grundgerüst der Anwendung erstellt und die Kommunikation zwisch
     
 -   **Beschreibung:** Implementierung einer Sicherheitsinstanz zur Identifizierung von Benutzern.
     
--   **Konkrete Aufgaben:** Integration von JWT (JSON Web Tokens). Erstellung eines User-Modells und einer Anmelde-Logik. Vorbereitung der Datenbank-Metadaten auf ein Pflichtfeld `OwnerId`.
+-   **Konkrete Aufgaben:** Integration von JWT (JSON Web Tokens). Erstellung eines User-Modells und einer Anmelde-Logik. Vorbereitung der Datenbank-Metadaten auf ein Pflichtfeld `OwnerId`. Password hashing.
     
 -   **Ziel:** Nur autorisierte Benutzer können auf die API zugreifen; die Grundlage für private Datenbereiche ist geschaffen.
     
