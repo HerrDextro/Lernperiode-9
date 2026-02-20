@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cloud.api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b17d055d62c2dc50055fc62f8693b6a690772ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("cloud.api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cloud.api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
