@@ -1,0 +1,17 @@
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\cloud.api.deps.json
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\cloud.api.runtimeconfig.json
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\appsettings.Development.json
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\appsettings.json
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\cloud.api.staticwebassets.endpoints.json
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\cloud.api.exe
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\cloud.api.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\MongoDB.Driver.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\MongoDB.Bson.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\DnsClient.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\SharpCompress.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\ZstdSharp.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\Snappier.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\cloud.api.pdb
+C:\Users\Neo\source\repos\S23BUCKET\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\Neo\source\repos\S23BUCKET\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\Neo\source\repos\S23BUCKET\obj\Debug\docker-c.35A3FFBA.Up2Date
