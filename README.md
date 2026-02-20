@@ -16,7 +16,9 @@ Heute wurde das Grundgerüst der Anwendung erstellt und die Kommunikation zwisch
 -   **Datenbankschicht:** Integration des MongoDB-Treibers und Initialisierung der GridFS-Buckets für die Datenspeicherung.
     
 -   **CLI-Frontend:** Grundgerüst der Spectre.Console-Anwendung zur interaktiven Darstellung der Dateilisten.
-    
+
+## Client UI
+![Client UI V1 (minimum viable product ahh)](Screenshot 2026-02-20 165709.png)
 
 ----------
 
