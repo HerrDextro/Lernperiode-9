@@ -20,3 +20,4 @@ C:\Users\Neo\source\repos\S23BUCKET\cloud.client\obj\Debug\net8.0\refint\cloud.c
 C:\Users\Neo\source\repos\S23BUCKET\cloud.client\obj\Debug\net8.0\cloud.client.pdb
 C:\Users\Neo\source\repos\S23BUCKET\cloud.client\obj\Debug\net8.0\cloud.client.genruntimeconfig.cache
 C:\Users\Neo\source\repos\S23BUCKET\cloud.client\obj\Debug\net8.0\ref\cloud.client.dll
+C:\Users\Neo\source\repos\S23BUCKET\cloud.client\obj\Debug\net8.0\cloud.client.sourcelink.json

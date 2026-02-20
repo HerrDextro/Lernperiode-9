@@ -1,7 +1,7 @@
 ﻿using Spectre.Console;
 using System.Net.Http.Json;
 
-Console.ReadLine();
+//Console.ReadLine();
 Thread.Sleep(7000); // Wait for API to start up (in a real app, you'd want a more robust solution)
 var client = new HttpClient { BaseAddress = new Uri("http://localhost:5000") }; // updated to match API
 

@@ -51,7 +51,7 @@
               "RelativeDocumentMoniker": "cloud.client\\Program.cs",
               "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.client\\Program.cs",
               "RelativeToolTip": "cloud.client\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-20T13:20:27.79Z",
               "EditorCaption": ""
@@ -66,8 +66,7 @@
               "RelativeToolTip": "cloud.api\\Properties\\launchSettings.json",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-20T13:18:48.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T13:18:48.86Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "docker-compose.yml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-02-20T10:20:50.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-20T10:20:50.935Z"
             },
             {
               "$type": "Document",
@@ -110,9 +108,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "docker-compose.dcproj",
-              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\s23bucket\\docker-compose.dcproj",
+              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\docker-compose.dcproj",
               "RelativeDocumentMoniker": "docker-compose.dcproj",
-              "ToolTip": "C:\\Users\\Neo\\source\\repos\\s23bucket\\docker-compose.dcproj",
+              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\docker-compose.dcproj",
               "RelativeToolTip": "docker-compose.dcproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
@@ -135,9 +133,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "cloud.api.csproj",
-              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\s23bucket\\cloud.api\\cloud.api.csproj",
+              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\cloud.api.csproj",
               "RelativeDocumentMoniker": "cloud.api\\cloud.api.csproj",
-              "ToolTip": "C:\\Users\\Neo\\source\\repos\\s23bucket\\cloud.api\\cloud.api.csproj",
+              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\cloud.api.csproj",
               "RelativeToolTip": "cloud.api\\cloud.api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
