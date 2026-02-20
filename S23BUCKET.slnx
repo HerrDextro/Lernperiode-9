@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="cloud.api/cloud.api.csproj" />
+  <Project Path="cloud.client/cloud.client.csproj" />
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+</Solution>
