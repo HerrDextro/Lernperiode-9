@@ -18,43 +18,51 @@ Heute wurde das Grundgerüst der Anwendung erstellt und die Kommunikation zwisch
 -   **CLI-Frontend:** Grundgerüst der Spectre.Console-Anwendung zur interaktiven Darstellung der Dateilisten.
 
 ## Client UI
-![Client UI V1 (minimum viable product ahh)](images/clientV1)
+![Client Interface](images/clientV1.png)
 
 ----------
 
 ## Arbeitspakete (Abgabetermin: 27.02.2026)
 
-### AP-01: Virtuelle Verzeichnislogik
+### AP-02: Authentifizierung und Benutzersystem
 
--   **Beschreibung:** Implementierung einer Ordnerstruktur innerhalb der Datenbank.
+-   **Erledigt** - [ ]
     
--   **Konkrete Aufgaben:** Erweiterung der Dateimetadaten in MongoDB um eine Pfad-Eigenschaft. Anpassung der API, um Inhalte basierend auf einem spezifischen Verzeichnis abzufragen (z.B. /dokumente).
+-   **Beschreibung:** Implementierung einer Sicherheitsinstanz zur Identifizierung von Benutzern.
     
--   **Ziel:** Der Benutzer kann im CLI durch Ordner navigieren.
+-   **Konkrete Aufgaben:** Integration von JWT (JSON Web Tokens). Erstellung eines User-Modells und einer Anmelde-Logik. Vorbereitung der Datenbank-Metadaten auf ein Pflichtfeld `OwnerId`. Password hashing.
     
-
-### AP-02: Streaming-Upload-System
-
--   **Beschreibung:** Entwicklung einer Funktion zum Hochladen lokaler Dateien in den Cloud-Speicher.
-    
--   **Konkrete Aufgaben:** Erstellung eines POST-Endpunkts in ASP.NET, der GridFSUploadStream nutzt, um Daten direkt in die Datenbank zu streamen. Implementierung eines Upload-Befehls im Client.
-    
--   **Ziel:** Dateien können vom lokalen Rechner auf den Server übertragen werden.
+-   **Ziel:** Nur autorisierte Benutzer können auf die API zugreifen; die Grundlage für private Datenbereiche ist geschaffen.
     
 
-### AP-03: Datenpersistenz und Volume-Mounting
+### AP-03: Streaming-Infrastruktur und REST-API
 
--   **Beschreibung:** Sicherstellung der dauerhaften Speicherung auf der Festplatte.
+-   **Erledigt** - [ ]
     
--   **Konkrete Aufgaben:** Konfiguration von Docker-Volumes in der docker-compose.yml, um das MongoDB-Datenverzeichnis auf einen physischen Ordner des Host-Systems (bzw. der HDD) zu mappen.
+-   **Beschreibung:** Hochperformante Verarbeitung von Dateitransfers und grundlegende CRUD-Operationen.
     
--   **Ziel:** Daten bleiben auch nach einem Neustart oder Löschen der Container erhalten.
+-   **Konkrete Aufgaben:** Erstellung von Streaming-Endpunkten für Upload (POST) und Download (GET) unter Nutzung von GridFS-Streams zur RAM-Schonung. Implementierung von Endpunkten zum Löschen und Umbenennen von Dateien.
+    
+-   **Ziel:** Dateien jeder Größe können stabil zwischen Client und Server übertragen werden.
     
 
-### AP-04: Dateiverwaltung und Metadaten
+### AP-04: Virtuelle Verzeichnislogik und Navigation
 
--   **Beschreibung:** Implementierung grundlegender Dateioperationen (CRUD).
+-   **Erledigt** - [ ]
     
--   **Konkrete Aufgaben:** Erstellung von Endpunkten zum Löschen und Umbenennen von Dateien. Anpassung der Benutzeroberfläche zur Ausführung dieser Aktionen.
+-   **Beschreibung:** Abstraktion der flachen Dateiliste in eine hierarchische Ordnerstruktur.
     
--   **Ziel:** Vollständige Verwaltung der Dateien über das CLI-Frontend.
+-   **Konkrete Aufgaben:** Erweiterung der Metadaten um ein `Path`-Attribut. Anpassung der API-Abfragen zur Filterung nach Verzeichnissen. Implementierung einer Navigationslogik im CLI (Wechseln zwischen Ordnern).
+    
+-   **Ziel:** Der Benutzer kann die Cloud wie ein klassisches Dateisystem bedienen.
+    
+
+### AP-05: Konfiguration und Produktionsreife
+
+-   **Erledigt** - [ ]
+    
+-   **Beschreibung:** Vorbereitung des Systems für den Einsatz auf dem Raspberry Pi.
+    
+-   **Konkrete Aufgaben:** Auslagerung sensibler Daten (ConnectionString, JWT-Key) in Umgebungsvariablen (Environment Variables). Optimierung des Docker-Images für ARM-Architekturen.
+    
+-   **Ziel:** Die Anwendung ist sicher konfiguriert und bereit für das Deployment auf produktiver Hardware.
