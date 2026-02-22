@@ -1,4 +1,4 @@
-﻿namespace cloud.api
+﻿namespace cloud.api.Dtos
 {
     public record FileEntryDto(
     string Id,

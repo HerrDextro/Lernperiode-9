@@ -1,4 +1,4 @@
-﻿namespace cloud.api
+﻿namespace cloud.api.Services
 {
     public static class PasswordHasher
     {

@@ -16,6 +16,8 @@ using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using BCrypt;
 using System.Security.Claims;
+using cloud.api.Services;
+using cloud.api.Dtos;
 
 var builder = WebApplication.CreateBuilder(args);
 

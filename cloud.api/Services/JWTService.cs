@@ -3,7 +3,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace cloud.api
+namespace cloud.api.Services
 {
     public class JWTService
     {
