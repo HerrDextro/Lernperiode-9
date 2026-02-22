@@ -14,7 +14,7 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=/.nuget/fallbackpackages
     volumes:
-      - C:\Users\Neo\source\repos\s23bucket\cloud.api:/app:rw
+      - C:\Users\Neo\source\repos\S23BUCKET\cloud.api:/app:rw
       - C:\Users\Neo\source\repos\S23BUCKET:/src:rw
       - C:\Users\Neo\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\Neo\.nuget\packages:/.nuget/packages:ro

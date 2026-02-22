@@ -40,3 +40,13 @@ C:\Users\Neo\source\repos\S23BUCKET\cloud.api\obj\Debug\net8.0\refint\cloud.api.
 C:\Users\Neo\source\repos\S23BUCKET\cloud.api\obj\Debug\net8.0\cloud.api.pdb
 C:\Users\Neo\source\repos\S23BUCKET\cloud.api\obj\Debug\net8.0\cloud.api.genruntimeconfig.cache
 C:\Users\Neo\source\repos\S23BUCKET\cloud.api\obj\Debug\net8.0\ref\cloud.api.dll
+C:\Users\Neo\source\repos\S23BUCKET\cloud.api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\Neo\source\repos\S23BUCKET\cloud.api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Neo\source\repos\S23BUCKET\cloud.api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Neo\source\repos\S23BUCKET\cloud.api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Neo\source\repos\S23BUCKET\cloud.api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Neo\source\repos\S23BUCKET\cloud.api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Neo\source\repos\S23BUCKET\cloud.api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Neo\source\repos\S23BUCKET\cloud.api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Neo\source\repos\S23BUCKET\cloud.api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Neo\source\repos\S23BUCKET\cloud.api\obj\Debug\net8.0\cloud.api.sourcelink.json

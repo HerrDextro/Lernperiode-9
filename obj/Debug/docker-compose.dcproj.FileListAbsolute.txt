@@ -15,3 +15,12 @@ C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\cloud.api.pdb
 C:\Users\Neo\source\repos\S23BUCKET\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\Neo\source\repos\S23BUCKET\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\Neo\source\repos\S23BUCKET\obj\Debug\docker-c.35A3FFBA.Up2Date
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\Neo\source\repos\S23BUCKET\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
