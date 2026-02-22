@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cloud.client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40996fbfd0a1a1400e6741da6f70f7b4a99d347c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d2ed6c06385b82ba43234402babb5333dff6835")]
 [assembly: System.Reflection.AssemblyProductAttribute("cloud.client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cloud.client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

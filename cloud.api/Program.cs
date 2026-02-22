@@ -59,7 +59,7 @@ builder.Services
 builder.Services.AddAuthorization();
 
 //auth endpoints
-app.MapPost("/register", async (string username, string password) =>
+app.MapPost("auth/register", async (string username, string password) =>
 {
     var newUser = new User
     {
@@ -71,7 +71,7 @@ app.MapPost("/register", async (string username, string password) =>
 
 });
 
-app.MapPost("/login", async (LoginDto req, JWTService jwtService) =>
+app.MapPost("auth/login", async (LoginDto req, JWTService jwtService) =>
 {
     var user = await collection.Find(u => u.Username == req.Username).FirstOrDefaultAsync();
     if (user == null)
@@ -84,7 +84,7 @@ app.MapPost("/login", async (LoginDto req, JWTService jwtService) =>
     return Results.Ok(new { Token = token });
 });
 
-app.MapPost("/refresh", async () => 
+app.MapPost("auth/refresh", async () => 
 { 
     throw new NotImplementedException();
 });
