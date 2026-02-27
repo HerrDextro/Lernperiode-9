@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -32,10 +32,23 @@
               "RelativeDocumentMoniker": "cloud.api\\Program.cs",
               "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Program.cs",
               "RelativeToolTip": "cloud.api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-22T20:38:21.632Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TestEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\TestEndpoints.cs",
+              "RelativeDocumentMoniker": "cloud.api\\TestEndpoints.cs",
+              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\TestEndpoints.cs",
+              "RelativeToolTip": "cloud.api\\TestEndpoints.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAADgvywAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T10:15:41.903Z",
               "EditorCaption": ""
             },
             {
@@ -49,19 +62,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-27T10:15:53.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TestEndpoints.cs",
-              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\TestEndpoints.cs",
-              "RelativeDocumentMoniker": "cloud.api\\TestEndpoints.cs",
-              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\TestEndpoints.cs",
-              "RelativeToolTip": "cloud.api\\TestEndpoints.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAawBsAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T10:15:41.903Z",
               "EditorCaption": ""
             }
           ]

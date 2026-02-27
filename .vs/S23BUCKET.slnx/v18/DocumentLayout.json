@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\testendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.api\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.api\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.api\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,20 +26,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Program.cs",
               "RelativeDocumentMoniker": "cloud.api\\Program.cs",
               "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Program.cs",
               "RelativeToolTip": "cloud.api\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADQAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAADgvxQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-22T20:38:21.632Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\User.cs",
+              "RelativeDocumentMoniker": "cloud.api\\User.cs",
+              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\User.cs",
+              "RelativeToolTip": "cloud.api\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T10:50:28.696Z",
               "EditorCaption": ""
             },
             {
@@ -46,20 +63,20 @@
               "RelativeDocumentMoniker": "cloud.api\\TestEndpoints.cs",
               "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\TestEndpoints.cs",
               "RelativeToolTip": "cloud.api\\TestEndpoints.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAADgvywAAABYAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwD0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-27T10:15:41.903Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AuthEndpoints.cs",
               "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\AuthEndpoints.cs",
               "RelativeDocumentMoniker": "cloud.api\\AuthEndpoints.cs",
               "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\AuthEndpoints.cs",
               "RelativeToolTip": "cloud.api\\AuthEndpoints.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-27T10:15:53.109Z",
               "EditorCaption": ""

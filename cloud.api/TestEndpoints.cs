@@ -25,7 +25,7 @@ namespace cloud.api
                 return "Already seeded.";
             });
 
-            app.MapGet("/files", async (IGridFSBucket bucket, ClaimsPrincipal user, string? path) =>
+            app.MapGet("/test/files", async (IGridFSBucket bucket, ClaimsPrincipal user, string? path) =>
             {
                 bool isPublic;
                 var userId = user.FindFirst(ClaimTypes.NameIdentifier)?.Value
@@ -55,7 +55,12 @@ namespace cloud.api
                 return Results.Ok(result);
             });
 
-            
+            app.MapGet("/test/users", (IMongoCollection<User> collection) =>
+            {
+                var users = collection.Find(_ => true).ToList();
+                if ( users.Count == 0 ) { return Results.NotFound( "No users found."); }
+                return Results.Ok(users);
+            });
         }
     }
 }
