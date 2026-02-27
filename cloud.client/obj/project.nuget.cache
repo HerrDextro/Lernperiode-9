@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KxxcM/i7Ohc=",
+  "dgSpecHash": "i6QAqsyhofs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.client\\cloud.client.csproj",
+  "projectFilePath": "C:\\Users\\Neo\\source\\repos\\s23bucket\\cloud.client\\cloud.client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Neo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.23.0\\microsoft.visualstudio.azure.containers.tools.targets.1.23.0.nupkg.sha512",
     "C:\\Users\\Neo\\.nuget\\packages\\spectre.console\\0.54.0\\spectre.console.0.54.0.nupkg.sha512",

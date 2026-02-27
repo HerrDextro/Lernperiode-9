@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.client\\cloud.client.csproj": {}
+    "C:\\Users\\Neo\\source\\repos\\s23bucket\\cloud.client\\cloud.client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.client\\cloud.client.csproj": {
+    "C:\\Users\\Neo\\source\\repos\\s23bucket\\cloud.client\\cloud.client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.client\\cloud.client.csproj",
+        "projectUniqueName": "C:\\Users\\Neo\\source\\repos\\s23bucket\\cloud.client\\cloud.client.csproj",
         "projectName": "cloud.client",
-        "projectPath": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.client\\cloud.client.csproj",
+        "projectPath": "C:\\Users\\Neo\\source\\repos\\s23bucket\\cloud.client\\cloud.client.csproj",
         "packagesPath": "C:\\Users\\Neo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.client\\obj\\",
+        "outputPath": "C:\\Users\\Neo\\source\\repos\\s23bucket\\cloud.client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

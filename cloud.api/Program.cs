@@ -11,7 +11,6 @@ using System.Security.Claims;
 using System.Text;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System;
-using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using BCrypt;
@@ -27,10 +26,7 @@ builder.WebHost.ConfigureKestrel(serverOptions =>
     serverOptions.ListenAnyIP(8080);
 });
 
-var app = builder.Build();
-
-app.MapGet("/", () => "The API is alive!");
-
+//var app = builder.Build();
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 var secretKey = Encoding.UTF8.GetBytes(jwtSettings["Key"]);
 var mongoClient = new MongoClient(builder.Configuration["MongoSettings:ConnectionString"]);
@@ -38,7 +34,8 @@ var database = mongoClient.GetDatabase(builder.Configuration["MongoSettings:Data
 var collection = database.GetCollection<User>("users"); //Neo Auth logic
 var bucket = new GridFSBucket(database);
 
-//auth logic
+// after creating `bucket` and/or after setting up `database`
+builder.Services.AddSingleton<IGridFSBucket>(bucket);
 builder.Services.AddScoped<JWTService>();
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -56,15 +53,18 @@ builder.Services
         };
     });
 
+
 builder.Services.AddAuthorization();
+var app = builder.Build();
 
 //auth endpoints
-app.MapPost("auth/register", async (string username, string password) =>
+app.MapPost("auth/register", async (LoginDto req) =>
 {
+
     var newUser = new User
     {
-        Username = username,
-        HashedPassword = BCrypt.Net.BCrypt.HashPassword(password)
+        Username = req.Username,
+        HashedPassword = BCrypt.Net.BCrypt.HashPassword(req.Password)
     };
 
     collection.InsertOne(newUser);
@@ -92,6 +92,8 @@ app.MapPost("auth/refresh", async () =>
 
 //can use [Authorize] attribute on endpoints that require auth, e.g.: post anything
 //create helloworld file if it doesn't exist
+app.MapGet("/", () => "The API is alive!");
+
 app.MapGet("/seed", async () => {
     var filter = Builders<GridFSFileInfo>.Filter.Empty;
     var existing = await bucket.Find(filter).AnyAsync();

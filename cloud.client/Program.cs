@@ -1,6 +1,7 @@
 ﻿using Spectre.Console;
 using Spectre.Console.Rendering;
 using System.Net.Http.Json;
+using System.Reflection.Emit;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
@@ -8,16 +9,17 @@ namespace Cloud.Client
 {
     class Program
     {
+        HttpClient client;
         static void Main()
         {
             Console.OutputEncoding = Encoding.UTF8;
-            var client = new HttpClient { BaseAddress = new Uri("http://localhost:5000") }; // updated to match API
+            var client = new HttpClient { BaseAddress = new Uri("http://localhost:5000") }; 
 
             AnsiConsole.Write(new FigletText("s23 bucket").Color(Color.Blue));
             AnsiConsole.Status()
                 .Start("Initialising Client...", ctx =>
                 {
-                    Thread.Sleep(3000);
+                    Thread.Sleep(100);
                 });
             AnsiConsole.MarkupLine("[green]Done![/]");
 
@@ -71,31 +73,84 @@ namespace Cloud.Client
                     }
                 }
             }
+            
+            var footer = new Layout("Footer").Size(6);
 
-
-
-            AnsiConsole.Clear();
             var layout = new Layout("Root")
                 .SplitRows(
-                    new Layout("Header").Size(3), // Platz für Logo/Titel
-                    new Layout("Main").SplitColumns(
-                        new Layout("Tree"),      // Links: Verzeichnisstruktur
-                        new Layout("Details")    // Rechts: Datei-Infos/Optionen
+                    new Layout("Path").Size(3),
+                    new Layout("Tree").SplitColumns(
+                        new Layout("Local"),
+                        new Layout("Cloud"),
+                        new Layout("Details")
                     ),
-                    new Layout("Footer").Size(6) // Unten: Eingabefeld/Status
+                    footer
                 );
+            
 
+            
+            // Render layout first
+            AnsiConsole.Clear();
             AnsiConsole.Write(layout);
 
-            //render all layouts below here
+            // Move cursor into footer
+            AnsiConsole.Cursor.SetPosition(0, AnsiConsole.Profile.Height - 6); //-6 for bottom
+
+            // Now prompt inside reserved space
+            var action = AnsiConsole.Prompt(
+                new SelectionPrompt<string>()
+                    .Title("Was möchtest du tun?")
+                    .AddChoices("Hochladen", "Download", "Löschen", "Ordner wechseln", "Beenden")
+            );
+            
+            AnsiConsole.Live(layout)
+                .Start(ctx =>
+                {
+                    layout["Footer"].Update(
+                        new Panel("Was möchtest du tun?")
+                    );
+
+                    ctx.Refresh();
+
+                    var action = AnsiConsole.Prompt(
+                        new SelectionPrompt<string>()
+                            .AddChoices("Hochladen", "Download", "Löschen", "Ordner wechseln", "Beenden")
+                    );
+                });
+
         }
 
-        public IRenderable RenderHeader()
+        public async Task<List<FileEntryDto>> GetFilesAsync(string path = "/")
         {
-            throw new NotImplementedException();
+            try
+            {
+                // Wir hängen den Pfad als Query-Parameter an
+                var response = await client.GetFromJsonAsync<List<FileEntryDto>>($"files?path={path}");
+                return response ?? new List<FileEntryDto>();
+            }
+            catch (Exception ex)
+            {
+                AnsiConsole.MarkupLine($"[red]Error loading files:[/] {ex.Message}");
+                return new List<FileEntryDto>();
+            }
         }
+
+
     }
-        
+
+    public record FileEntryDto
+    {
+        string Id;
+        string Name;
+        long Size;
+        string Path;
+        bool IsPublic;
+        string OwnerId;
+
+    }
+    
+
+
 }
 
 
