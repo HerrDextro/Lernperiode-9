@@ -22,47 +22,39 @@ Heute wurde das Grundgerüst der Anwendung erstellt und die Kommunikation zwisch
 
 ----------
 
-## Arbeitspakete (Abgabetermin: 27.02.2026)
+## Arbeitspakete 27.02.2026
 
-### AP-02: Authentifizierung und Benutzersystem
+Beschreibung: Implementierung einer Sicherheitsinstanz zur Identifizierung von Benutzern.  
+Ziel: Nur autorisierte Benutzer können auf die API zugreifen; die Grundlage für private Datenbereiche ist geschaffen.  
+- [ ] Integration von JWT (JSON Web Tokens)  
+- [ ] Erstellung eines User-Modells und einer Anmelde-Logik  
+- [x] Vorbereitung der Datenbank-Metadaten auf ein Pflichtfeld `OwnerId`  
+- [x] Password hashing  
 
--   **Erledigt** - [ ]
-    
--   **Beschreibung:** Implementierung einer Sicherheitsinstanz zur Identifizierung von Benutzern.
-    
--   **Konkrete Aufgaben:** Integration von JWT (JSON Web Tokens). Erstellung eines User-Modells und einer Anmelde-Logik. Vorbereitung der Datenbank-Metadaten auf ein Pflichtfeld `OwnerId`. Password hashing.
-    
--   **Ziel:** Nur autorisierte Benutzer können auf die API zugreifen; die Grundlage für private Datenbereiche ist geschaffen.
-    
+Heute habe ich die Arbeitspakete implementiert, BCrpyt für das Hashing, IdentityModel.Tokens für das JWT und die FileEntryDto (mit OwnerId natürlich) implementiert. Ich habe mit Postman Teilen meiner API getestet, und sie haben "einigermassen funktioniert" (es gab ein paar Fehler im Logik, die aber einfacher zu beheben sind.) Ich habe auch gelernt wie meine Endpoints zu mappen, da es eine Minimale-API ist macht mann das anders als bei Controllers. Das war nicht so einfach, ich müsste sehr viel debuggen, und lernen wie genau aspnet funktioniert. (meistens lässt mann die builder Sachen eher in Ruhe) Da der Backend trotz das es ohne Fehler compiled und lauft immer 404 gab, müsste ich die Häckchen oben wegnehmen weil es jetzt immer noch nicht funktional ist. Damit es nächstes Mal weniger Chance auf Bugs gibt und ich schneller debiggen kann, habe ich die Endpoints in TestEndpoints, AuthEndpoints und FileEndpoints aufgeteilt. 
 
-### AP-03: Streaming-Infrastruktur und REST-API
+## Arbeitspakete 06.03.2026
 
--   **Erledigt** - [ ]
-    
--   **Beschreibung:** Hochperformante Verarbeitung von Dateitransfers und grundlegende CRUD-Operationen.
-    
--   **Konkrete Aufgaben:** Erstellung von Streaming-Endpunkten für Upload (POST) und Download (GET) unter Nutzung von GridFS-Streams zur RAM-Schonung. Implementierung von Endpunkten zum Löschen und Umbenennen von Dateien.
-    
--   **Ziel:** Dateien jeder Größe können stabil zwischen Client und Server übertragen werden.
-    
+Beschreibung: Hochperformante Verarbeitung von Dateitransfers und grundlegende CRUD-Operationen.  
+Ziel: Dateien jeder Größe können stabil zwischen Client und Server übertragen werden.  
+- [ ] Erstellung von Streaming-Endpunkten für Upload (POST) und Download (GET)  
+- [ ] Nutzung von GridFS-Streams zur RAM-Schonung  
+- [ ] Implementierung von Endpunkten zum Löschen von Dateien  
+- [ ] Implementierung von Endpunkten zum Umbenennen von Dateien
 
-### AP-04: Virtuelle Verzeichnislogik und Navigation
 
--   **Erledigt** - [ ]
-    
--   **Beschreibung:** Abstraktion der flachen Dateiliste in eine hierarchische Ordnerstruktur.
-    
--   **Konkrete Aufgaben:** Erweiterung der Metadaten um ein `Path`-Attribut. Anpassung der API-Abfragen zur Filterung nach Verzeichnissen. Implementierung einer Navigationslogik im CLI (Wechseln zwischen Ordnern).
-    
--   **Ziel:** Der Benutzer kann die Cloud wie ein klassisches Dateisystem bedienen.
-    
+## Arbeitspakete 13.03.2026
 
-### AP-05: Konfiguration und Produktionsreife
+Beschreibung: Abstraktion der flachen Dateiliste in eine hierarchische Ordnerstruktur.  
+Ziel: Der Benutzer kann die Cloud wie ein klassisches Dateisystem bedienen.  
+- [ ] Erweiterung der Metadaten um ein `Path`-Attribut  
+- [ ] Anpassung der API-Abfragen zur Filterung nach Verzeichnissen  
+- [ ] Implementierung einer Navigationslogik im CLI  
 
--   **Erledigt** - [ ]
-    
--   **Beschreibung:** Vorbereitung des Systems für den Einsatz auf dem Raspberry Pi.
-    
--   **Konkrete Aufgaben:** Auslagerung sensibler Daten (ConnectionString, JWT-Key) in Umgebungsvariablen (Environment Variables). Optimierung des Docker-Images für ARM-Architekturen.
-    
--   **Ziel:** Die Anwendung ist sicher konfiguriert und bereit für das Deployment auf produktiver Hardware.
+
+## Arbeitspakete 20.03.2026
+
+Beschreibung: Vorbereitung des Systems für den Einsatz auf dem Raspberry Pi.  
+Ziel: Die Anwendung ist sicher konfiguriert und bereit für das Deployment auf produktiver Hardware.  
+- [ ] Auslagerung sensibler Daten in Environment Variables  
+- [ ] Optimierung des Docker-Images für ARM-Architekturen  
