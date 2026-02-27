@@ -28,9 +28,10 @@ Beschreibung: Implementierung einer Sicherheitsinstanz zur Identifizierung von B
 Ziel: Nur autorisierte Benutzer können auf die API zugreifen; die Grundlage für private Datenbereiche ist geschaffen.  
 - [ ] Integration von JWT (JSON Web Tokens)  
 - [ ] Erstellung eines User-Modells und einer Anmelde-Logik  
-- [ ] Vorbereitung der Datenbank-Metadaten auf ein Pflichtfeld `OwnerId`  
-- [ ] Password hashing  
+- [x] Vorbereitung der Datenbank-Metadaten auf ein Pflichtfeld `OwnerId`  
+- [x] Password hashing  
 
+Heute habe ich die Arbeitspakete implementiert, BCrpyt für das Hashing, IdentityModel.Tokens für das JWT und die FileEntryDto (mit OwnerId natürlich) implementiert. Ich habe mit Postman Teilen meiner API getestet, und sie haben "einigermassen funktioniert" (es gab ein paar Fehler im Logik, die aber einfacher zu beheben sind.) Ich habe auch gelernt wie meine Endpoints zu mappen, da es eine Minimale-API ist macht mann das anders als bei Controllers. Das war nicht so einfach, ich müsste sehr viel debuggen, und lernen wie genau aspnet funktioniert. (meistens lässt mann die builder Sachen eher in Ruhe) Da der Backend trotz das es ohne Fehler compiled und lauft immer 404 gab, müsste ich die Häckchen oben wegnehmen weil es jetzt immer noch nicht funktional ist. Damit es nächstes Mal weniger Chance auf Bugs gibt und ich schneller debiggen kann, habe ich die Endpoints in TestEndpoints, AuthEndpoints und FileEndpoints aufgeteilt. 
 
 ## Arbeitspakete 06.03.2026
 
@@ -39,7 +40,7 @@ Ziel: Dateien jeder Größe können stabil zwischen Client und Server übertrage
 - [ ] Erstellung von Streaming-Endpunkten für Upload (POST) und Download (GET)  
 - [ ] Nutzung von GridFS-Streams zur RAM-Schonung  
 - [ ] Implementierung von Endpunkten zum Löschen von Dateien  
-- [ ] Implementierung von Endpunkten zum Umbenennen von Dateien  
+- [ ] Implementierung von Endpunkten zum Umbenennen von Dateien
 
 
 ## Arbeitspakete 13.03.2026
