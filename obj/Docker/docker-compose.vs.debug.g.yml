@@ -15,7 +15,7 @@ services:
       - NUGET_FALLBACK_PACKAGES=/.nuget/fallbackpackages
     volumes:
       - C:\Users\Neo\source\repos\s23bucket\cloud.api:/app:rw
-      - C:\Users\Neo\source\repos\S23BUCKET:/src:rw
+      - C:\Users\Neo\source\repos\s23bucket:/src:rw
       - C:\Users\Neo\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\Neo\.nuget\packages:/.nuget/packages:ro
       - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/.nuget/fallbackpackages:ro

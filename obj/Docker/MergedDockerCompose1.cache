@@ -1,8 +1,8 @@
-name: dockercompose13637612626025072038
+name: dockercompose10814583349545632518
 services:
   cloud.api:
     build:
-      context: C:\Users\Neo\source\repos\S23BUCKET
+      context: C:\Users\Neo\source\repos\s23bucket
       dockerfile: cloud.api/Dockerfile
       args:
         BUILD_CONFIGURATION: Debug
@@ -11,6 +11,10 @@ services:
         com.microsoft.created-by: visual-studio
         com.microsoft.visual-studio.project-name: cloud.api
       target: base
+    depends_on:
+      mongo_db:
+        condition: service_started
+        required: true
     entrypoint:
       - dotnet
       - --roll-forward
@@ -33,6 +37,10 @@ services:
     networks:
       default: null
     ports:
+      - mode: ingress
+        target: 8080
+        published: "5000"
+        protocol: tcp
       - mode: ingress
         target: 8080
         protocol: tcp
@@ -62,11 +70,11 @@ services:
         read_only: true
         bind: {}
       - type: bind
-        source: C:\Users\Neo\source\repos\S23BUCKET\cloud.api
+        source: C:\Users\Neo\source\repos\s23bucket\cloud.api
         target: /app
         bind: {}
       - type: bind
-        source: C:\Users\Neo\source\repos\S23BUCKET
+        source: C:\Users\Neo\source\repos\s23bucket
         target: /src
         bind: {}
       - type: bind
@@ -93,6 +101,23 @@ services:
         target: /HotReloadAgent
         read_only: true
         bind: {}
+  mongo_db:
+    image: mongo:latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 27017
+        published: "27017"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: cloud_data
+        target: /data/db
+        volume: {}
 networks:
   default:
-    name: dockercompose13637612626025072038_default
+    name: dockercompose10814583349545632518_default
+volumes:
+  cloud_data:
+    name: dockercompose10814583349545632518_cloud_data

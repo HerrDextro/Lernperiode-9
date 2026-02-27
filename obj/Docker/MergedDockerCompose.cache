@@ -1,9 +1,13 @@
-name: dockercompose13637612626025072038
+name: dockercompose10814583349545632518
 services:
   cloud.api:
     build:
-      context: C:\Users\Neo\source\repos\S23BUCKET
+      context: C:\Users\Neo\source\repos\s23bucket
       dockerfile: cloud.api/Dockerfile
+    depends_on:
+      mongo_db:
+        condition: service_started
+        required: true
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ASPNETCORE_HTTP_PORTS: "8080"
@@ -12,6 +16,10 @@ services:
     networks:
       default: null
     ports:
+      - mode: ingress
+        target: 8080
+        published: "5000"
+        protocol: tcp
       - mode: ingress
         target: 8080
         protocol: tcp
@@ -39,6 +47,23 @@ services:
         target: /root/.aspnet/https
         read_only: true
         bind: {}
+  mongo_db:
+    image: mongo:latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 27017
+        published: "27017"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: cloud_data
+        target: /data/db
+        volume: {}
 networks:
   default:
-    name: dockercompose13637612626025072038_default
+    name: dockercompose10814583349545632518_default
+volumes:
+  cloud_data:
+    name: dockercompose10814583349545632518_cloud_data

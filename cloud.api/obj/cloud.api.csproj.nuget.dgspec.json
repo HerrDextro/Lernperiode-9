@@ -70,10 +70,6 @@
               "target": "Package",
               "version": "[3.6.0, )"
             },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.6.2, )"
-            },
             "System.Net.Http.Json": {
               "target": "Package",
               "version": "[8.0.0, )"

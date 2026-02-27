@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.api\\testendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\testendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.api\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\authendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.api\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.api\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B820EDCA-99BE-50F9-A2F7-0E2ABEA256E9}|cloud.client\\cloud.client.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B820EDCA-99BE-50F9-A2F7-0E2ABEA256E9}|cloud.client\\cloud.client.csproj|solutionrelative:cloud.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\neo\\source\\repos\\s23bucket\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.api\\dtos\\fileentrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\dtos\\fileentrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|c:\\users\\neo\\source\\repos\\s23bucket\\cloud.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{1AB2AD5D-A163-E9E2-9F67-03C98B44D46C}|cloud.api\\cloud.api.csproj|solutionrelative:cloud.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Program.cs",
               "RelativeDocumentMoniker": "cloud.api\\Program.cs",
               "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Program.cs",
               "RelativeToolTip": "cloud.api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-22T20:38:21.632Z",
               "IsPinned": true,
@@ -60,88 +40,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\User.cs",
-              "RelativeDocumentMoniker": "cloud.api\\User.cs",
-              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\User.cs",
-              "RelativeToolTip": "cloud.api\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T17:06:42.037Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Dtos\\LoginDto.cs",
-              "RelativeDocumentMoniker": "cloud.api\\Dtos\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Dtos\\LoginDto.cs",
-              "RelativeToolTip": "cloud.api\\Dtos\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T17:05:55.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.client\\Program.cs",
-              "RelativeDocumentMoniker": "cloud.client\\Program.cs",
-              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.client\\Program.cs",
-              "RelativeToolTip": "cloud.client\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGAAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T14:25:53.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FileEntryDto.cs",
-              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Dtos\\FileEntryDto.cs",
-              "RelativeDocumentMoniker": "cloud.api\\Dtos\\FileEntryDto.cs",
-              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Dtos\\FileEntryDto.cs",
-              "RelativeToolTip": "cloud.api\\Dtos\\FileEntryDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T14:24:52.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Dockerfile",
-              "RelativeDocumentMoniker": "cloud.api\\Dockerfile",
-              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Dockerfile",
-              "RelativeToolTip": "cloud.api\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-26T14:23:31.88Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "JWTService.cs",
-              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Services\\JWTService.cs",
-              "RelativeDocumentMoniker": "cloud.api\\Services\\JWTService.cs",
-              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\Services\\JWTService.cs",
-              "RelativeToolTip": "cloud.api\\Services\\JWTService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "Title": "AuthEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\AuthEndpoints.cs",
+              "RelativeDocumentMoniker": "cloud.api\\AuthEndpoints.cs",
+              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\AuthEndpoints.cs",
+              "RelativeToolTip": "cloud.api\\AuthEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T14:20:32.71Z",
+              "WhenOpened": "2026-02-27T10:15:53.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-02-23T20:07:53.287Z"
+              "DocumentIndex": 0,
+              "Title": "TestEndpoints.cs",
+              "DocumentMoniker": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\TestEndpoints.cs",
+              "RelativeDocumentMoniker": "cloud.api\\TestEndpoints.cs",
+              "ToolTip": "C:\\Users\\Neo\\source\\repos\\S23BUCKET\\cloud.api\\TestEndpoints.cs",
+              "RelativeToolTip": "cloud.api\\TestEndpoints.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAawBsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T10:15:41.903Z",
+              "EditorCaption": ""
             }
           ]
         }

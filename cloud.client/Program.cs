@@ -74,49 +74,7 @@ namespace Cloud.Client
                 }
             }
             
-            var footer = new Layout("Footer").Size(6);
-
-            var layout = new Layout("Root")
-                .SplitRows(
-                    new Layout("Path").Size(3),
-                    new Layout("Tree").SplitColumns(
-                        new Layout("Local"),
-                        new Layout("Cloud"),
-                        new Layout("Details")
-                    ),
-                    footer
-                );
             
-
-            
-            // Render layout first
-            AnsiConsole.Clear();
-            AnsiConsole.Write(layout);
-
-            // Move cursor into footer
-            AnsiConsole.Cursor.SetPosition(0, AnsiConsole.Profile.Height - 6); //-6 for bottom
-
-            // Now prompt inside reserved space
-            var action = AnsiConsole.Prompt(
-                new SelectionPrompt<string>()
-                    .Title("Was möchtest du tun?")
-                    .AddChoices("Hochladen", "Download", "Löschen", "Ordner wechseln", "Beenden")
-            );
-            
-            AnsiConsole.Live(layout)
-                .Start(ctx =>
-                {
-                    layout["Footer"].Update(
-                        new Panel("Was möchtest du tun?")
-                    );
-
-                    ctx.Refresh();
-
-                    var action = AnsiConsole.Prompt(
-                        new SelectionPrompt<string>()
-                            .AddChoices("Hochladen", "Download", "Löschen", "Ordner wechseln", "Beenden")
-                    );
-                });
 
         }
 
