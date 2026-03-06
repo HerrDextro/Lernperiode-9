@@ -1,10 +1,58 @@
-﻿namespace cloud.api
+﻿using cloud.api.Services;
+using Microsoft.AspNetCore.Mvc;
+using MongoDB.Driver;
+
+namespace cloud.api
 {
     public static class AuthEndpoints
     {
         public static void MapAuthEndpoints(this IEndpointRouteBuilder app)
         {
+            app.MapPost("/auth/register", async ([FromBody] LoginDto loginDto, IMongoCollection<User> collection) => 
+            {
+                if (string.IsNullOrWhiteSpace(loginDto.Username) || string.IsNullOrWhiteSpace(loginDto.Password))
+                {
+                    return Results.BadRequest("Username and password cannot be empty.");
+                }
+                if (await collection.Find(u => u.Username == loginDto.Username).FirstOrDefaultAsync() != null)
+                {
+                    return Results.BadRequest("User already exists");
+                }
 
+                var newUser = new User
+                {
+                    Username = loginDto.Username,
+                    HashedPassword = BCrypt.Net.BCrypt.HashPassword(loginDto.Password)
+                };
+
+                collection.InsertOne(newUser);
+                return Results.Created();
+            });
+
+            app.MapPost("/auth/login", async ([FromBody] LoginDto req, JWTService jwtService, IMongoCollection<User> collection) =>
+            {
+                var user = await collection.Find(u => u.Username == req.Username).FirstOrDefaultAsync();
+                if (user == null)
+                    return Results.Unauthorized();
+
+                if (!PasswordHasher.VerifyPassword(req.Password, user.HashedPassword))
+                    return Results.Unauthorized(); //unauthorized can mean smt is wrong with pwd logic
+
+                var token = jwtService.GenerateToken(user.Id, req.Username);
+                return Results.Ok(new { Token = token });
+            });
+
+            app.MapPost("/auth/refresh", async ([FromBody] LoginDto req, JWTService jwtService) => 
+            { 
+                throw new NotImplementedException();
+            })
+            .RequireAuthorization();
+
+            app.MapPost("/admin/services", async () => 
+            { 
+                
+            })
+            .RequireAuthorization();
         }
 
     }

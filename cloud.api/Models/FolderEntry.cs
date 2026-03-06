@@ -1,12 +1,12 @@
-﻿namespace cloud.api.Dtos
+﻿namespace cloud.api.Models
 {
-    public record FileEntryDto(
+    public record FolderEntry(
     string Id,
     string Name,
     long Size,
     string VirtualPath,
-    bool IsPublic,
     string OwnerId,
+    bool IsPublic,
     string[] AllowedEntities,
     string? MimeType = null
     );

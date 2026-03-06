@@ -45,3 +45,4 @@ C:\Users\Neo\source\repos\s23bucket\cloud.api\obj\Debug\net8.0\refint\cloud.api.
 C:\Users\Neo\source\repos\s23bucket\cloud.api\obj\Debug\net8.0\cloud.api.pdb
 C:\Users\Neo\source\repos\s23bucket\cloud.api\obj\Debug\net8.0\cloud.api.genruntimeconfig.cache
 C:\Users\Neo\source\repos\s23bucket\cloud.api\obj\Debug\net8.0\ref\cloud.api.dll
+C:\Users\Neo\source\repos\s23bucket\cloud.api\bin\Debug\net8.0\registeredservices.json

@@ -50,7 +50,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapTestEndpoints(bucket);
-//app.MapAuthEndpoints();
+app.MapAuthEndpoints();
+app.MapFileEndpoints(bucket);
 
 app.Run();
 

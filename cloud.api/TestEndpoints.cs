@@ -1,8 +1,10 @@
-﻿using MongoDB.Driver;
+﻿using cloud.api.Dtos;
+using cloud.api.Models;
+using cloud.api.Services;
+using MongoDB.Bson;
+using MongoDB.Driver;
 using MongoDB.Driver.GridFS;
 using System.Security.Claims;
-using cloud.api.Services;
-using cloud.api.Dtos;
 
 namespace cloud.api
 {
@@ -44,14 +46,19 @@ namespace cloud.api
 
                 if ( fileInfos.Count > 0 ) { return Results.NotFound( "No files found."); }
 
-                var result = fileInfos.Select(f => new FileEntryDto(
+                var result = fileInfos.Select(f => new FileEntry(
                     f.Id.ToString(),
                     f.Filename,
                     f.Length,
-                    f.Metadata["VirtualPath"].AsString,
-                    f.Metadata["IsPublic"].AsBoolean,
-                    f.Metadata["OwnerId"].AsString
-                ));
+                    f.Metadata.GetValue("VirtualPath", "/").AsString,
+                    f.Metadata.GetValue("IsPublic", false).AsBoolean,
+                    f.Metadata.GetValue("OwnerId", "").AsString,
+                    // Extract the BsonArray and map each item to your DTO
+                    f.Metadata.GetValue("AllowedIdentities", new BsonArray()).AsBsonArray
+                      .Select(x => new Dtos.ACLEntryDto(x["IdentityId"].AsString, x["Access"].AsString))
+                      .ToList(),
+                    f.Metadata.Contains("MimeType") ? f.Metadata["MimeType"].AsString : "application/octet-stream"
+                )).ToList();
                 return Results.Ok(result);
             });
 
