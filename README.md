@@ -26,8 +26,8 @@ Heute wurde das Grundgerüst der Anwendung erstellt und die Kommunikation zwisch
 
 Beschreibung: Implementierung einer Sicherheitsinstanz zur Identifizierung von Benutzern.  
 Ziel: Nur autorisierte Benutzer können auf die API zugreifen; die Grundlage für private Datenbereiche ist geschaffen.  
-- [ ] Integration von JWT (JSON Web Tokens)  
-- [ ] Erstellung eines User-Modells und einer Anmelde-Logik  
+- [x] Integration von JWT (JSON Web Tokens)  
+- [x] Erstellung eines User-Modells und einer Anmelde-Logik  
 - [x] Vorbereitung der Datenbank-Metadaten auf ein Pflichtfeld `OwnerId`  
 - [x] Password hashing  
 
@@ -38,10 +38,11 @@ Heute habe ich die Arbeitspakete implementiert, BCrpyt für das Hashing, Identit
 Beschreibung: Hochperformante Verarbeitung von Dateitransfers und grundlegende CRUD-Operationen.  
 Ziel: Dateien jeder Größe können stabil zwischen Client und Server übertragen werden.  
 - [ ] Erstellung von Streaming-Endpunkten für Upload (POST) und Download (GET)  
-- [ ] Nutzung von GridFS-Streams zur RAM-Schonung  
+- [x] Nutzung von GridFS-Streams zur RAM-Schonung  
 - [ ] Implementierung von Endpunkten zum Löschen von Dateien  
 - [ ] Implementierung von Endpunkten zum Umbenennen von Dateien
 
+Heute habe ich mir viele Gedanken über die Architektur gemacht. Ich habe heute der Anfang gemacht für Support von registrierte Backends und ihre clients. Das problem damit war, dass nicht jede Client sich als user einloggen sollte. Jetzt ist das Plan, dass man ein Service registrieren kann, welches ein permanentes Key bekommt. Wenn ein client dieses registrierte backend für resources fragt, schickt diese die Anfrage weiter zum fileserver, und generieret es ein temporäres JWT mit fileId und expiry time Claims. So kann der Client direkt auf dem Fileserver zugreifen und nur die Dateien holen, die im temporäres JWT spezifiziert sind. Ich habe mehrere Klassen und ein Teil der Logik dazu implementiert. Auch habe ich streaming Endpunkte für alle Dateien und Dateien mit Pfad gemacht, und mit ID. Es gibt ein neues Patch Endpunkt damit man die Zugriffsrechte auf eine Datei ändern kann.
 
 ## Arbeitspakete 13.03.2026
 
